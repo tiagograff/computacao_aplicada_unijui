@@ -1,26 +1,14 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
-
+//Crie um algoritmo em C que leia um número qualquer, e calcule seu FATORIAL.
 main(){
-    int idade;
-    printf("entre com uma idade: ");
-    scanf("%d",&idade);
-    if (!(idade >17)){
-        printf("Pronto para o exame!");
-    }else{
-        printf("erro!");
+int fat, n,i;
+    printf("insira um valor: ");
+    scanf("%d", &n);
+    i = n;
+    for(fat = 1; n > 1; n = n - 1){
+        fat = fat * n;     
     }
-    //
-    int cont,a;
-    for (cont = 1;cont <= 5;cont++){
-        printf("teste\n");
-        scanf("%d", &a);
-    }
-    //
-    int num;
-    do{
-        printf("numero positivo: ");
-        scanf("%d",&num);
-    }while (num<0);
+    printf("%d! = %d",i,fat);
 }

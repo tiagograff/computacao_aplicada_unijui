@@ -1,38 +1,18 @@
-/*utilize o exemplo e crie mais uma função  que calcule o CUBO do número informado 
-*/
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
+//Escreva um programa que leia uma variável 5 vezes, mostrando, no final, a soma obtida.
+main(){
 
-void square(int x) {
-        printf("O quadrado e %d\n",(x*x)); 
-}
+    int i = 0;
+    int x = 0;
+    int total = 0;
 
-void cube(int y) {
-        int z = pow(y,3);
-        printf("O cubo e %d\n",z); 
-}
+    for (int i = 0; i < 5; i++){
+        printf("digite um numero inteiro: ");
+        scanf("%d", &x);
+        total = x + total;
+    }
 
-int soma (int a, int b){
-        int c = a+b;
-        return(c);
-}
-
-int main(){
-        int num;
-        printf("Entre com o numero\n");
-        scanf("%d",&num);
-        printf("\n");
-        square(num);
-        cube(num);
-        getch();  
-
-        int a,b,z;
-
-        printf("digite um numero\n");
-        scanf("%d",&a);
-        printf("digite outro um numero\n");
-        scanf("%d",&b);
-        z = soma(a,b);
-        printf("A soma dos numeros eh %d\n",z);
+    printf("a soma obtida eh %d", total);
 }

@@ -1,28 +1,16 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
-
+//Escreva um programa que leia um número qualquer, e escreva sua TABUADA na tela.
 main(){
-int num;
-printf("Digite sua nota ");
-scanf("%d",&num);
-if (num >= 60){
-    printf("Voce esta aprovado!\n");
-}else{
-    printf ("\nVoce esta reprovado!");
-}
-getch();
-return(0);
 
-int c,b;
-b = c = 5;
-printf("%d\n",c);
-printf("%d\n",c++);
-printf("%d\n",c);
+    int i,x,num;
+    printf("entre com o numero: ");
+    scanf("%d",&num);
+    for (i = 0; i <= 10; i++)
+    {
+        x = (num*i);
+        printf("%dX%d=%d\n",num,i,x);
+    } 
 
-printf("%d\n",b);
-printf("%d\n",++b);
-printf("%d\n",b);
-
-system("PAUSE");
 }

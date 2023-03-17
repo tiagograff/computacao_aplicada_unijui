@@ -1,30 +1,19 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
+//Crie um programa, em C, que eleve ao quadrado os números PARES, e ao CUBO os números ÍMPARES no
+//intervalo de 1 a 30.
+
 main(){
-    int mat[4][3], i,j;
-    //ler matriz
-    printf("\nMatriz");
-    for (i = 0; i < 4; i++)
-    {
-        printf("\nLinha %d: ",i);
-        for (j = 0; j < 3; j++)
-        {
-            printf(" Coluna %d: ",j);
-            scanf("%d",&mat[i][j]);
-        }     
+int num, res;
+for (int i = 1; i <= 30; i++)
+{
+    if (i%2==0){
+        res = (i*i);
+        printf("%d\n",res);
+    }else{
+        res = pow(i,3);
+        printf("%d\n",res);
     }
-    //mostra matriz
-    printf("\n Matriz Digitada");
-    for (i = 0; i < 4; i++)
-    {
-        printf("\n");
-        for (j = 0; j < 3; j++)
-        {
-            //if(i==j)
-            printf("\t%d",mat[i][j]);
-        }
-        
-    }
-    
+}
 }
