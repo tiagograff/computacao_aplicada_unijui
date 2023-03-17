@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+//Faça um algoritmo, em C, que leia um número inteiro e calcule o quadrado e o cubo deste número
+//através de funções.
+
 quadrado(int x){
     int y = pow(x,2);
     return y;
