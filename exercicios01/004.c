@@ -6,6 +6,14 @@
 
 main(){
 
+float V, pi, r;
+pi = 3.14;
 
+printf("entre com o valor do raio: ");
+scanf("%f", &r);
+
+V = ((pi*(pow(r,3)))*4/3);
+
+printf("o volume dessa esfera eh de: %0.2f", V);
 
 }
