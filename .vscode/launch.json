@@ -8,8 +8,6 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/tiago/computacao-aplicadaUNIJUI/exercicios04/output",
-      "program": "c:/Users/tiago/computacao-aplicadaUNIJUI/exercicios04/output/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
